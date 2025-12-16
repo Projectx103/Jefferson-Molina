@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Jefferson Mölina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+       :root {
+  --bg-primary: #fff;
+  --bg-secondary: #f7f7f7;
+  --text-primary: #111;
+  --text-secondary: #666;
+  --accent: #e63946;
+  --border: #ddd;
+  --selection-bg: #e63946;
+  --selection-text: #fff;
+  --highlight: #ffd60a;
+  --highlight-2: #06ffa5;
+  --highlight-3: #ff6b9d;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2a2a2a;
+  --text-primary: #fff;
+  --text-secondary: #aaa;
+  --accent: #ff6b6b;
+  --border: #444;
+  --selection-bg: #ff6b6b;
+  --selection-text: #000;
+  --highlight: #ffd60a;
+  --highlight-2: #00d9ff;
+  --highlight-3: #ff5e78;
+}
+
+[data-theme="koopa-beach"] {
+  --bg-primary: #0077be;
+  --bg-secondary: #005fa3;
+  --text-primary: #fff;
+  --text-secondary: #d4f1ff;
+  --accent: #ffd700;
+  --border: #0099e6;
+  --selection-bg: #ffd700;
+  --selection-text: #0077be;
+  --highlight: #00ffff;
+  --highlight-2: #ff6ec7;
+  --highlight-3: #ffeb3b;
+}
+
+[data-theme="choco-mountain"] {
+  --bg-primary: #6b4423;
+  --bg-secondary: #4a2f19;
+  --text-primary: #fff;
+  --text-secondary: #d4a574;
+  --accent: #ff8c42;
+  --border: #8b5a3c;
+  --selection-bg: #ff8c42;
+  --selection-text: #4a2f19;
+  --highlight: #ffd700;
+  --highlight-2: #98fb98;
+  --highlight-3: #ffb347;
+}
+
+[data-theme="rainbow-road"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --text-primary: #fff;
+  --text-secondary: #e94560;
+  --accent: #f72585;
+  --border: #0f3460;
+  --selection-bg: #f72585;
+  --selection-text: #fff;
+  --highlight: #4cc9f0;
+  --highlight-2: #f72585;
+  --highlight-3: #7209b7;
+}
+
+[data-theme="ocean"] {
+  --bg-primary: #001219;
+  --bg-secondary: #005f73;
+  --text-primary: #e9d8a6;
+  --text-secondary: #94d2bd;
+  --accent: #ee9b00;
+  --border: #0a9396;
+  --selection-bg: #ee9b00;
+  --selection-text: #001219;
+  --highlight: #ca6702;
+  --highlight-2: #0a9396;
+  --highlight-3: #94d2bd;
+}
+
+[data-theme="forest"] {
+  --bg-primary: #2d6a4f;
+  --bg-secondary: #1b4332;
+  --text-primary: #d8f3dc;
+  --text-secondary: #95d5b2;
+  --accent: #52b788;
+  --border: #40916c;
+  --selection-bg: #52b788;
+  --selection-text: #1b4332;
+  --highlight: #b7e4c7;
+  --highlight-2: #74c69d;
+  --highlight-3: #d8f3dc;
+}
+
+[data-theme="sunset"] {
+  --bg-primary: #03071e;
+  --bg-secondary: #370617;
+  --text-primary: #ffba08;
+  --text-secondary: #f48c06;
+  --accent: #dc2f02;
+  --border: #6a040f;
+  --selection-bg: #dc2f02;
+  --selection-text: #fff;
+  --highlight: #faa307;
+  --highlight-2: #dc2f02;
+  --highlight-3: #e85d04;
+}
+
+[data-theme="lavender"] {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #e9ecef;
+  --text-primary: #495057;
+  --text-secondary: #6c757d;
+  --accent: #7209b7;
+  --border: #dee2e6;
+  --selection-bg: #7209b7;
+  --selection-text: #fff;
+  --highlight: #f72585;
+  --highlight-2: #b5179e;
+  --highlight-3: #d8bfd8;
+}
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            background-color: var(--selection-bg);
+            color: var(--selection-text);
+        }
+
+        ::-moz-selection {
+            background-color: var(--selection-bg);
+            color: var(--selection-text);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background-color: var(--bg-primary);
+            z-index: 100;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-primary);
+        }
+
+        .logo img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 2px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover img {
+            transform: rotate(360deg);
+        }
+
+        .logo-text {
+            font-size: 1.1rem;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-text::before {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--accent);
+            overflow: hidden;
+            width: 0;
+            white-space: nowrap;
+            transition: width 0.4s ease;
+        }
+
+        .logo:hover .logo-text::before {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            transition: color 0.2s;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        nav a.active {
+            color: var(--text-primary);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.6rem;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            transform: rotate(180deg);
+        }
+
+        .theme-panel {
+            position: fixed;
+            top: 80px;
+            right: 5%;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            display: none;
+            z-index: 200;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .theme-panel.active {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .theme-panel h3 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .theme-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .theme-option {
+            background: none;
+            border: 2px solid var(--border);
+            text-align: center;
+            padding: 0.7rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            border-radius: 6px;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+        }
+
+        .theme-option:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .theme-option.active {
+            background: var(--accent);
+            color: #fff;
+            border-color: var(--accent);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        h2:hover a {
+            opacity: 1;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background: var(--bg-secondary);
+            padding: 3rem 5%;
+            border-top: 1px solid var(--border);
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .footer-section a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.2s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .version {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                gap: 1rem;
+            }
+
+            nav a {
+                font-size: 0.85rem;
+            }
+
+            .theme-panel {
+                right: 5%;
+                left: 5%;
+            }
+
+            .theme-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body data-theme="classic">
+    <header>
+        <a href="index.html" class="logo">
+            <img src="https://i.ibb.co/bQPxk6w/Untitled-design.png" alt="Jefferson Molina">
+            <span class="logo-text" data-text="Jefferson Mölina">Jefferson Mölina</span>
+        </a>
+        <nav>
+            <a href="index.html">01 Home</a>
+            <a href="index.html#services">02 Services</a>
+            <a href="index.html#portfolio">03 Projects</a>
+            <a href="#contact">04 Contact</a>
+        </nav>
+        <button class="theme-toggle" onclick="toggleThemePanel()" title="Change Theme">
+            <i class="fas fa-palette"></i>
+        </button>
+    </header>
+
+    <div class="theme-panel" id="themePanel">
+        <h3>Select Theme</h3>
+        <div class="theme-options">
+            <button class="theme-option active" onclick="setTheme('classic')">Classic</button>
+            <button class="theme-option" onclick="setTheme('dark')">Dark</button>
+            <button class="theme-option" onclick="setTheme('koopa-beach')">Koopa Beach</button>
+            <button class="theme-option" onclick="setTheme('choco-mountain')">Choco Mountain</button>
+            <button class="theme-option" onclick="setTheme('rainbow-road')">Rainbow Road</button>
+            <button class="theme-option" onclick="setTheme('ocean')">Ocean</button>
+            <button class="theme-option" onclick="setTheme('forest')">Forest</button>
+            <button class="theme-option" onclick="setTheme('sunset')">Sunset</button>
+            <button class="theme-option" onclick="setTheme('lavender')">Lavender</button>
+        </div>
+    </div>
+
+    <main>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">How I handle your data</p>
+
+        <p>This website does not collect any personal data. It does not set any cookies and it does not use any third-party tracking scripts. No user analytics or other metrics are processed during your visit, and the server does not write any log files, which means your IP address is not stored anywhere.</p>
+
+        <p>Basically, it's just a free piece of content, no strings attached.</p>
+
+        <h2 id="secure-data">Secure Data Transfer <a href="#secure-data">#</a></h2>
+
+        <p>This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider may still be able to see that you are loading files from this site, but not their content. This also protects you from third parties intercepting data e.g. while browsing on public WiFi, or network providers injecting ads into this site.</p>
+
+        <h2 id="third-party">Third-Party Services <a href="#third-party">#</a></h2>
+
+        <p>This website may contain links to external services and platforms such as:</p>
+
+        <ul>
+            <li>Upwork profile for professional services</li>
+            <li>Social media profiles (LinkedIn, Facebook)</li>
+            <li>Email communication services</li>
+        </ul>
+
+        <p>When you click on these links, you will be directed to third-party websites that have their own privacy policies. I am not responsible for the privacy practices of these external sites.</p>
+
+        <h2 id="contact-forms">Contact and Communication <a href="#contact-forms">#</a></h2>
+
+        <p>If you contact me via email or through external platforms, your communication may include personal information such as your name, email address, and message content. This information is used solely for the purpose of responding to your inquiry and is not shared with third parties.</p>
+
+        <h2 id="data-controller">Responsible Data Controller <a href="#data-controller">#</a></h2>
+
+        <div class="contact-info">
+            <p><strong>Jefferson Mölina</strong></p>
+            <p>Digital Operations Solutions</p>
+            <p>Angeles City, Central Luzon</p>
+            <p>Philippines</p>
+            <p><br>If you have any questions or concerns about this privacy policy,<br>please contact me at <a href="mailto:contact@digitalops.solutions">contact@digitalops.solutions</a></p>
+        </div>
+
+        <h2 id="your-rights">Your Rights <a href="#your-rights">#</a></h2>
+
+        <p>You have the right to:</p>
+
+        <ul>
+            <li>Request information about what personal data (if any) is stored</li>
+            <li>Request correction of any inaccurate personal data</li>
+            <li>Request deletion of your personal data</li>
+            <li>Object to processing of your personal data</li>
+        </ul>
+
+        <p>To exercise any of these rights, please contact me at the email address provided above.</p>
+
+        <h2 id="changes">Changes to This Policy <a href="#changes">#</a></h2>
+
+        <p>I reserve the right to update this privacy policy at any time. Any changes will be posted on this page with an updated revision date.</p>
+
+        <p class="version"><em>Last updated: December 13, 2025</em></p>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>© 2012–2025</h3>
+                <a href="#">Jefferson Mölina</a>
+            </div>
+            <div class="footer-section">
+                <h3>Work</h3>
+                <a href="#">Digital Operations Solutions</a>
+                <a href="https://www.upwork.com/freelancers/~012a917732823895c2" target="_blank">Upwork Profile</a>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <a href="https://www.linkedin.com/in/jefferson-molina-10267b259" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.facebook.com/share/1AUn13Puie/" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="mailto:contact@digitalops.solutions">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Built with passion for digital transformation</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleThemePanel() {
+            const panel = document.getElementById('themePanel');
+            panel.classList.toggle('active');
+        }
+
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+            localStorage.setItem('selectedTheme', theme);
+            
+            document.querySelectorAll('.theme-option').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            toggleThemePanel();
+        }
+
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('selectedTheme') || 'classic';
+            document.body.setAttribute('data-theme', savedTheme);
+            
+            document.querySelectorAll('.theme-option').forEach(btn => {
+                const btnTheme = btn.textContent.toLowerCase().replace(/ /g, '-');
+                if (btnTheme === savedTheme) {
+                    btn.classList.add('active');
+                }
+            });
+        });
+
+        // Close theme panel when clicking outside
+        document.addEventListener('click', (e) => {
+            const panel = document.getElementById('themePanel');
+            const toggle = document.querySelector('.theme-toggle');
+            
+            if (!panel.contains(e.target) && !toggle.contains(e.target)) {
+                panel.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
