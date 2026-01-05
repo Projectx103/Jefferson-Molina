@@ -6,113 +6,138 @@
   <title>About - Jefferson Mölina</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   <style>
-    :root {
-      --bg-primary: #fff;
-      --bg-secondary: #f7f7f7;
-      --text-primary: #111;
-      --text-secondary: #666;
-      --accent: #e63946;
-      --border: #ddd;
-      --selection-bg: #e63946;
-      --selection-text: #fff;
-      --highlight: #ffd60a;
-    }
+   :root {
+  --primary: #ff335f;
+  --secondary: #43a9a3;
+  --text: #373a3c;
+  --text-offset: #818a91;
+  --bg: #ffffff;
+  --bg-offset: #eceeef;
+  --border: #e1e3e6;
+}
 
-    [data-theme="dark"] {
-      --bg-primary: #1a1a1a;
-      --bg-secondary: #2a2a2a;
-      --text-primary: #fff;
-      --text-secondary: #aaa;
-      --accent: #ff6b6b;
-      --border: #444;
-      --selection-bg: #ff6b6b;
-      --selection-text: #000;
-      --highlight: #ffd60a;
-    }
+[data-theme="dark"] {
+  --primary: #ff5277;
+  --secondary: #43a9a3;
+  --text: #ffffff;
+  --text-offset: #818a91;
+  --bg: #0e141b;
+  --bg-offset: #2d2d2d;
+  --border: #3a3d45;
+}
 
-    [data-theme="koopa-beach"] {
-      --bg-primary: #0077be;
-      --bg-secondary: #005fa3;
-      --text-primary: #fff;
-      --text-secondary: #d4f1ff;
-      --accent: #ffd700;
-      --border: #0099e6;
-      --selection-bg: #ffd700;
-      --selection-text: #0077be;
-      --highlight: #00ffff;
-    }
+[data-theme="koopa-beach"] {
+  --primary: #ff9d00;
+  --secondary: #bae8e8;
+  --text: #272343;
+  --text-offset: #2d334a;
+  --bg: #fffffe;
+  --bg-offset: #e3f6f5;
+  --border: #bae8e8;
+}
 
-    [data-theme="choco-mountain"] {
-      --bg-primary: #6b4423;
-      --bg-secondary: #4a2f19;
-      --text-primary: #fff;
-      --text-secondary: #d4a574;
-      --accent: #ff8c42;
-      --border: #8b5a3c;
-      --selection-bg: #ff8c42;
-      --selection-text: #4a2f19;
-      --highlight: #ffd700;
-    }
+[data-theme="choco-mountain"] {
+  --primary: #f3ab87;
+  --secondary: #e78fb3;
+  --text: #fffffe;
+  --text-offset: #ffc0ad;
+  --bg: #55423d;
+  --bg-offset: #271c19;
+  --border: #6b524c;
+}
 
-    [data-theme="rainbow-road"] {
-      --bg-primary: #1a1a2e;
-      --bg-secondary: #16213e;
-      --text-primary: #fff;
-      --text-secondary: #e94560;
-      --accent: #f72585;
-      --border: #0f3460;
-      --selection-bg: #f72585;
-      --selection-text: #fff;
-      --highlight: #4cc9f0;
-    }
+[data-theme="moo-moo-farm"] {
+  --primary: #f582ae;
+  --secondary: #8bd3dd;
+  --text: #172c66;
+  --text-offset: #006e8a;
+  --bg: #fef6e4;
+  --bg-offset: #f3d2c1;
+  --border: #e8c4a8;
+}
 
-    [data-theme="ocean"] {
-      --bg-primary: #001219;
-      --bg-secondary: #005f73;
-      --text-primary: #e9d8a6;
-      --text-secondary: #94d2bd;
-      --accent: #ee9b00;
-      --border: #0a9396;
-      --selection-bg: #ee9b00;
-      --selection-text: #001219;
-      --highlight: #ca6702;
-    }
+[data-theme="bowsers-castle"] {
+  --primary: #7f5af0;
+  --secondary: #2cb67d;
+  --text: #fffffe;
+  --text-offset: #94a1b2;
+  --bg: #16161a;
+  --bg-offset: #383a61;
+  --border: #3a3d45;
+}
 
-    [data-theme="forest"] {
-      --bg-primary: #2d6a4f;
-      --bg-secondary: #1b4332;
-      --text-primary: #d8f3dc;
-      --text-secondary: #95d5b2;
-      --accent: #52b788;
-      --border: #40916c;
-      --selection-bg: #52b788;
-      --selection-text: #1b4332;
-      --highlight: #b7e4c7;
-    }
+[data-theme="yoshi-valley"] {
+  --primary: #99c221;
+  --secondary: #e55812;
+  --text: #41474c;
+  --text-offset: #757d84;
+  --bg: #fafbf5;
+  --bg-offset: #e8e0d9;
+  --border: #d8dfe6;
+}
 
-    [data-theme="sunset"] {
-      --bg-primary: #03071e;
-      --bg-secondary: #370617;
-      --text-primary: #ffba08;
-      --text-secondary: #f48c06;
-      --accent: #dc2f02;
-      --border: #6a040f;
-      --selection-bg: #dc2f02;
-      --selection-text: #fff;
-      --highlight: #faa307;
-    }
+[data-theme="rainbow-road"] {
+  --primary: #49f5f7;
+  --secondary: #01c317;
+  --text: #fffffe;
+  --text-offset: #d846ff;
+  --bg: #311b46;
+  --bg-offset: #1c0e2b;
+  --border: #4a2d5e;
+}
 
-    [data-theme="lavender"] {
-      --bg-primary: #f8f9fa;
-      --bg-secondary: #e9ecef;
-      --text-primary: #495057;
-      --text-secondary: #6c757d;
-      --accent: #7209b7;
-      --border: #dee2e6;
-      --selection-bg: #7209b7;
-      --selection-text: #fff;
-      --highlight: #f72585;
-    }
+[data-theme="lobster-life"] {
+  --primary: #b62b2b;
+  --secondary: #fb9f13;
+  --text: #4b1313;
+  --text-offset: #f1797c;
+  --bg: #fcddd4;
+  --bg-offset: #f3c9c0;
+  --border: #e8b5ab;
+}
+
+[data-theme="hacker-news"] {
+  --primary: #ff6600;
+  --secondary: #ff6600;
+  --text: #000000;
+  --text-offset: #828282;
+  --bg: #f6f6ef;
+  --bg-offset: #e8e8e0;
+  --border: #d8d8cc;
+}
+
+/* Starfield effect for Rainbow Road theme */
+[data-theme="rainbow-road"]::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: 
+    radial-gradient(2px 2px at 20% 30%, white, transparent),
+    radial-gradient(2px 2px at 60% 70%, white, transparent),
+    radial-gradient(1px 1px at 50% 50%, white, transparent),
+    radial-gradient(1px 1px at 80% 10%, white, transparent),
+    radial-gradient(2px 2px at 90% 60%, white, transparent),
+    radial-gradient(1px 1px at 33% 80%, white, transparent),
+    radial-gradient(1px 1px at 15% 60%, white, transparent);
+  background-size: 200% 200%;
+  animation: twinkle 4s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    background-position: 0% 0%, 100% 100%, 50% 50%, 80% 20%, 10% 90%, 33% 80%, 15% 60%;
+  }
+  50% {
+    opacity: 0.8;
+    background-position: 100% 100%, 0% 0%, 25% 75%, 90% 10%, 20% 80%, 40% 70%, 25% 50%;
+  }
+}
 
     * {
       margin: 0;
@@ -120,63 +145,114 @@
       box-sizing: border-box;
     }
 
-    ::selection {
-      background-color: var(--selection-bg);
-      color: var(--selection-text);
-    }
+::selection {
+  background-color: var(--primary);
+  color: var(--bg);
+}
 
-    ::-moz-selection {
-      background-color: var(--selection-bg);
-      color: var(--selection-text);
-    }
+::-moz-selection {
+  background-color: var(--primary);
+  color: var(--bg);
+}
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: var(--text-primary);
-      background-color: var(--bg-primary);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      transition: background-color 0.3s, color 0.3s;
-    }
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: var(--text);  /* CHANGED */
+  background-color: var(--bg);  /* CHANGED */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    .highlight {
-      position: relative;
-      display: inline;
-    }
+.highlight {
+  position: relative;
+  display: inline;
+  padding-bottom: 2px;
+}
 
-    .highlight::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 0;
-      height: 8px;
-      background-color: var(--highlight);
-      opacity: 0.5;
-      z-index: -1;
-      transition: width 0.4s ease;
-    }
+.highlight::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  z-index: -1;
+}
 
-    .highlight:hover::after {
-      width: 100%;
-    }
+.highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 10px;
+  background-color: #26ffae;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1rem 5%;
-      background-color: var(--bg-primary);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+/* Theme-specific inactive colors */
+:root .highlight::before {
+  background-color: #eceeef;
+}
+
+[data-theme="dark"] .highlight::before {
+  background-color: #2d2d2d;
+}
+
+[data-theme="koopa-beach"] .highlight::before {
+  background-color: #e3f6f5;
+}
+
+[data-theme="choco-mountain"] .highlight::before {
+  background-color: #271c19;
+}
+
+[data-theme="moo-moo-farm"] .highlight::before {
+  background-color: #f3d2c1;
+}
+
+[data-theme="bowsers-castle"] .highlight::before {
+  background-color: #383a61;
+}
+
+[data-theme="yoshi-valley"] .highlight::before {
+  background-color: #e8e0d9;
+}
+
+[data-theme="rainbow-road"] .highlight::before {
+  background-color: #d846ff;
+}
+
+[data-theme="lobster-life"] .highlight::before {
+  background-color: #f1797c;
+}
+
+[data-theme="hacker-news"] .highlight::before {
+  background-color: #ff6600;
+}
+
+.highlight:hover::after {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background-color: var(--bg);  /* CHANGED */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
     .profile {
       display: flex;
@@ -189,7 +265,7 @@
   width: 48px;
   height: 48px;
   margin-right: 12px;
-  border: 2px solid var(--accent);
+  border: 2px solid var(--primary);  /* CHANGED */
   transition: transform 0.3s ease;
 }
 
@@ -197,25 +273,25 @@
       transform: rotate(360deg);
     }
 
-    .profile .name {
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: var(--text-primary);
-      position: relative;
-      overflow: hidden;
-    }
+.profile .name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);  /* CHANGED */
+  position: relative;
+  overflow: hidden;
+}
 
-    .profile .name::before {
-      content: attr(data-text);
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--accent);
-      overflow: hidden;
-      width: 0;
-      white-space: nowrap;
-      transition: width 0.4s ease;
-    }
+.profile .name::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary);  /* CHANGED */
+  overflow: hidden;
+  width: 0;
+  white-space: nowrap;
+  transition: width 0.4s ease;
+}
 
     .profile:hover .name::before {
       width: 100%;
@@ -226,67 +302,67 @@
       gap: 2rem;
     }
 
-    .nav a {
-      text-decoration: none;
-      color: var(--text-secondary);
-      position: relative;
-      font-size: 0.95rem;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
+.nav a {
+  text-decoration: none;
+  color: var(--text-offset);  /* CHANGED */
+  position: relative;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
 
-    .nav a:hover {
-      color: var(--accent);
-    }
+.nav a:hover {
+  color: var(--primary);  /* CHANGED */
+}
 
-    .nav a.active {
-      color: var(--text-primary);
-    }
+.nav a.active {
+  color: var(--text);  /* CHANGED */
+}
 
-    .nav a.active::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: var(--accent);
-    }
+.nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);  /* CHANGED */
+}
 
-    .theme-toggle {
-      background: none;
-      border: 2px solid var(--border);
-      color: var(--text-primary);
-      padding: 0.6rem;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 1.2rem;
-      transition: all 0.3s;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--border);
+  color: var(--text);  /* CHANGED */
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    .theme-toggle:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      transform: rotate(180deg);
-    }
+.theme-toggle:hover {
+  border-color: var(--primary);  /* CHANGED */
+  color: var(--primary);  /* CHANGED */
+  transform: rotate(180deg);
+}
 
-    .theme-panel {
-      position: fixed;
-      top: 80px;
-      right: 5%;
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.5rem;
-      display: none;
-      z-index: 200;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    }
+.theme-panel {
+  position: fixed;
+  top: 80px;
+  right: 5%;
+  background: var(--bg-offset);  /* CHANGED */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: none;
+  z-index: 200;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
 
     .theme-panel.active {
       display: block;
@@ -315,28 +391,28 @@
       gap: 0.5rem;
     }
 
-    .theme-option {
-      background: none;
-      border: 2px solid var(--border);
-      text-align: center;
-      padding: 0.7rem;
-      cursor: pointer;
-      color: var(--text-primary);
-      border-radius: 6px;
-      transition: all 0.2s;
-      font-size: 0.85rem;
-    }
+.theme-option {
+  background: none;
+  border: 2px solid var(--border);
+  text-align: center;
+  padding: 0.7rem;
+  cursor: pointer;
+  color: var(--text);  /* CHANGED */
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+}
 
-    .theme-option:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
+.theme-option:hover {
+  border-color: var(--primary);  /* CHANGED */
+  transform: translateY(-2px);
+}
 
-    .theme-option.active {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-    }
+.theme-option.active {
+  background: var(--primary);  /* CHANGED */
+  color: #fff;
+  border-color: var(--primary);  /* CHANGED */
+}
 
     .content {
       max-width: 1100px;
@@ -373,80 +449,72 @@
       min-width: 300px;
     }
 
-    .intro {
-      font-size: 1.3rem;
-      line-height: 1.8;
-      margin-bottom: 3rem;
-      color: var(--text-primary);
-    }
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 3rem;
+  color: var(--text);  /* CHANGED */
+}
 
-    .section {
-      margin-bottom: 3rem;
-    }
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text);  /* CHANGED */
+  font-weight: 700;
+}
 
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--text-primary);
-      font-weight: 700;
-    }
+.section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: var(--text-offset);  /* CHANGED */
+}
 
-    .section p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      margin-bottom: 1rem;
-      color: var(--text-secondary);
-    }
+.section li {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-offset);  /* CHANGED */
+}
 
-    .section ul {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0;
-    }
+.section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);  /* CHANGED */
+  font-weight: bold;
+}
 
-    .section li {
-      font-size: 1.1rem;
-      padding: 0.5rem 0;
-      padding-left: 1.5rem;
-      position: relative;
-      color: var(--text-secondary);
-    }
+.content a {
+  color: var(--primary);  /* CHANGED */
+  text-decoration: none;
+  position: relative;
+}
 
-    .section li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-weight: bold;
-    }
-
-    .content a {
-      color: var(--accent);
-      text-decoration: none;
-      position: relative;
-    }
-
-    .content a::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: var(--accent);
-      transition: width 0.3s ease;
-    }
+.content a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary);  /* CHANGED */
+  transition: width 0.3s ease;
+}
 
     .content a:hover::after {
       width: 100%;
     }
 
-    .topics-list {
-      background: var(--bg-secondary);
-      padding: 2rem;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
+.topics-list {
+  background: var(--bg-offset);  /* CHANGED */
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+
 
     .topics-list ul {
       list-style: none;
@@ -464,12 +532,12 @@
       border-bottom: none;
     }
 
-    .topics-list li::before {
-      content: '▸';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-    }
+.topics-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary);  /* CHANGED */
+}
 
     .social-links {
       display: flex;
@@ -478,19 +546,19 @@
       flex-wrap: wrap;
     }
 
-    .social-links a {
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--text-secondary);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+.social-links a {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-offset);  /* CHANGED */
+  text-decoration: none;
+  transition: color 0.2s;
+}
 
-    .social-links a:hover {
-      color: var(--accent);
-    }
+.social-links a:hover {
+  color: var(--primary);  /* CHANGED */
+}
 
     .social-links i {
       font-size: 1.3rem;
@@ -602,19 +670,21 @@
   </button>
 </header>
 
+
 <div class="theme-panel" id="themePanel">
   <h3>Select Theme</h3>
-  <div class="theme-options">
-    <button class="theme-option active" onclick="setTheme('classic')">Classic</button>
-    <button class="theme-option" onclick="setTheme('dark')">Dark</button>
-    <button class="theme-option" onclick="setTheme('koopa-beach')">Koopa Beach</button>
-    <button class="theme-option" onclick="setTheme('choco-mountain')">Choco Mountain</button>
-    <button class="theme-option" onclick="setTheme('rainbow-road')">Rainbow Road</button>
-    <button class="theme-option" onclick="setTheme('ocean')">Ocean</button>
-    <button class="theme-option" onclick="setTheme('forest')">Forest</button>
-    <button class="theme-option" onclick="setTheme('sunset')">Sunset</button>
-    <button class="theme-option" onclick="setTheme('lavender')">Lavender</button>
-  </div>
+<div class="theme-options">
+  <button class="theme-option active" onclick="setTheme('classic')">Classic</button>
+  <button class="theme-option" onclick="setTheme('dark')">Dark</button>
+  <button class="theme-option" onclick="setTheme('koopa-beach')">Koopa Beach</button>
+  <button class="theme-option" onclick="setTheme('choco-mountain')">Choco Mountain</button>
+  <button class="theme-option" onclick="setTheme('moo-moo-farm')">Moo Moo Farm</button>
+  <button class="theme-option" onclick="setTheme('bowsers-castle')">Bowser's Castle</button>
+  <button class="theme-option" onclick="setTheme('yoshi-valley')">Yoshi Valley</button>
+  <button class="theme-option" onclick="setTheme('rainbow-road')">Rainbow Road</button>
+  <button class="theme-option" onclick="setTheme('lobster-life')">Lobster Life</button>
+  <button class="theme-option" onclick="setTheme('hacker-news')">Hacker News</button>
+</div>
 </div>
 
 <div class="content">
